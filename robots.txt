@@ -1,0 +1,3 @@
+User-agent: *
+Host: s40217.lpmotortest.com
+Sitemap: http://s40217.lpmotortest.com/sitemap.xml
